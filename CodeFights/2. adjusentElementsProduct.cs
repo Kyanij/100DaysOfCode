@@ -1,3 +1,15 @@
+int adjacentElementsProduct(int[] inputArray)
+        {
+            int sum = inputArray[0]*inputArray[1];
+            for(int i = 1; i+1<inputArray.Length; i++)
+            {
+                if (inputArray[i] * inputArray[i + 1] > sum)
+                    sum = inputArray[i] * inputArray[i + 1];
+            }
+            return sum;
+        }
+
+
 /*
 Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
@@ -24,14 +36,3 @@ Guaranteed constraints:
 
 The largest product of adjacent elements.
 */
-
-int adjacentElementsProduct(int[] inputArray)
-        {
-            int sum = inputArray[0]*inputArray[1];
-            for(int i = 1; i+1<inputArray.Length; i++)
-            {
-                if (inputArray[i] * inputArray[i + 1] > sum)
-                    sum = inputArray[i] * inputArray[i + 1];
-            }
-            return sum;
-        }
