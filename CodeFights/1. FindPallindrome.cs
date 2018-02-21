@@ -1,6 +1,4 @@
-Given the string, check if it is a palindrome.
-
-###########################################
+//Given the string, check if it is a palindrome.
 
 bool checkPalindrome(string inputString)
          {
