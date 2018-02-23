@@ -24,7 +24,7 @@ function isEven(number)
 }
 
     
-// Function that counts the number of a char that is a argument in a string
+// Function that counts the number of chars (in a string) which type is an argument in 
     
 function CountCs(ourString, givenChar)
 {
